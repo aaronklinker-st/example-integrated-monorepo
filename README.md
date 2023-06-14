@@ -6,7 +6,7 @@ How does it work? There are paths listed as aliases in the `tsconfig.json`.
 
 https://github.com/aaronklinker-st/example-integrated-monorepo/blob/be62a4a76a3c5e56f1d7e6d60068da0201e19f60/tsconfig.json#L14-L23
 
-Workspace modules, like `@ui`, are imported using those aliases. This means they effectively imported as relative paths just like any other local TS file, instead of NPM packages inside the node_modules directory. This way, you don't need to build any shared packages.
+Workspace modules, like `@ui`, are imported using those aliases. This means they are imported as relative paths (just like any other local TS file), instead of NPM packages inside the node_modules directory. This way, you don't need to build any shared packages.
 
 > In fact, none of the `packages/*/package.json` contain a `build` script.
 
