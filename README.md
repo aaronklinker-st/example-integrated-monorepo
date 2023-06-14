@@ -33,11 +33,30 @@ pnpm dev
 
 ## Todos
 
-- [x] ~~_Can we get auto-imports working in VSCode?_~~ Yes, don't install dependencies in anywhere but the root package.json, and only one node_modules directory will be created
-- [x] ~~_Can the project automatically add path aliases for each pakcage/app, and can we use them internal to their own packages, the same as `~` today?_~~ Yes - See the [custom monorepoPaths Vite plugin](https://github.com/aaronklinker-st/example-integrated-monorepo/blob/79530a254aa5eb4801b3e48718dea62fd5bdf8f8/vite.shared.cts#L6-L27), and the [`scripts/prepare-tsconfig-paths.ts`](https://github.com/aaronklinker-st/example-integrated-monorepo/blob/main/scripts/prepare-tsconfig-paths.ts) for updating the `tsconfig.json`
-- [x] ~~_Is HMR working for both the electron app and web extension when saving a change to the UI package?_~~ Yes!
-- [x] ~~_How is CSS shared from our UI package?_~~ Vite handles it and includes in each of the apps because we simply import `createSharedApp` from `@ui`. Works with tailwind as well.
-- [x] ~~_How do we enforce module boundries, like only importing `webextension-polyfill` inside `apps/extension`?_~~ There's an ESLint plugin that can do this
-- [x] ~~_How do we check for type errors or run linting? Separately per package or once for the entire repo?_~~ Once for the entire repo will be the simplest solution
+- [x] ~~_Can we get auto-imports working in VSCode?_~~ 
+
+   Yes, don't install dependencies in anywhere but the root package.json, and only one node_modules directory will be created
+
+- [x] ~~_Can the project automatically add path aliases for each pakcage/app, and can we use them internal to their own packages, the same as `~` today?_~~
+
+   Yes - See the [custom monorepoPaths Vite plugin](https://github.com/aaronklinker-st/example-integrated-monorepo/blob/79530a254aa5eb4801b3e48718dea62fd5bdf8f8/vite.shared.cts#L6-L27), and the [`scripts/prepare-tsconfig-paths.ts`](https://github.com/aaronklinker-st/example-integrated-monorepo/blob/main/scripts/prepare-tsconfig-paths.ts) for updating the `tsconfig.json`
+
+- [x] ~~_Is HMR working for both the electron app and web extension when saving a change to the UI package?_~~
+
+   Yes!
+
+- [x] ~~_How is CSS shared from our UI package?_~~
+
+   Vite handles it and includes in each of the apps because we simply import `createSharedApp` from `@ui`. Works with tailwind as well.
+
+- [x] ~~_How do we enforce module boundries, like only importing `webextension-polyfill` inside `apps/extension`?_~~
+
+   There's an ESLint plugin that can do this
+
+- [x] ~~_How do we check for type errors or run linting? Separately per package or once for the entire repo?_~~ 
+
+   Once for the entire repo will be the simplest solution
+
 - [ ] Can we use multiple TSConfig files, like one per package? Or do we even need to?
+
 - [ ] Can we use multiple versions of a tool like Vite?
