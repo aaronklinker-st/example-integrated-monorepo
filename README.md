@@ -2,7 +2,7 @@
 
 Basic integrated monorepo with an electron app, web extension, and shared ui/background packages.
 
-How does it work? There are path's setup as aliases in the `tsconfig.json`.
+How does it work? There are paths listed as aliases in the `tsconfig.json`.
 
 https://github.com/aaronklinker-st/example-integrated-monorepo/blob/be62a4a76a3c5e56f1d7e6d60068da0201e19f60/tsconfig.json#L14-L23
 
