@@ -14,7 +14,7 @@ That said, every app needs to include the build configuration to build all their
 
 https://github.com/aaronklinker-st/example-integrated-monorepo/blob/be62a4a76a3c5e56f1d7e6d60068da0201e19f60/vite.shared.cts#L29-L31
 
-Another thing to point out is that there are no dependencies in any of the `package.json`s other than the root. All dependencies for all apps are listed in the root `package.json`.
+Another thing to point out is that there are no dependencies in any of the `package.json`s other than the root. All dependencies for all apps and packages are listed in the root `package.json`.
 
 ## Setup
 
