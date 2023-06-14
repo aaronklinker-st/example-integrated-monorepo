@@ -10,7 +10,7 @@ Workspace modules, like `@ui`, are imported using those aliases. This means they
 
 > In fact, none of the `packages/*/package.json` contain a `build` script.
 
-That said, every app needs to include the build configuration to build all their dependencies. So even though the `apps/desktop` app doesn't include any `.vue` files, it still needs to include the `@vitejs/plugin-vue` plugin to use the `@ui` package. We can get around this by sharing a build configuration, in this case vite so we aren't rewriting our vite config for every app.
+That said, every app needs to include the build configuration to build all their dependencies. So even though the `apps/desktop` app doesn't include any `.vue` files, it still needs to include the `@vitejs/plugin-vue` plugin to use the `@ui` package. We can get around this by sharing a build configuration so we aren't rewriting our vite config for every app.
 
 https://github.com/aaronklinker-st/example-integrated-monorepo/blob/be62a4a76a3c5e56f1d7e6d60068da0201e19f60/vite.shared.cts#L29-L31
 
