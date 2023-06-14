@@ -51,7 +51,7 @@ pnpm dev
 
 - [x] ~~_How do we enforce module boundries, like only importing `webextension-polyfill` inside `apps/extension`?_~~
 
-   There's an ESLint plugin that can do this
+   There's an ESLint plugin that can do this: [`eslint-plugin-boundries`](eslint-plugin-boundaries)
 
 - [x] ~~_How do we check for type errors or run linting? Separately per package or once for the entire repo?_~~ 
 
