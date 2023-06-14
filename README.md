@@ -30,3 +30,13 @@ In dev mode, you can save changes to the `packages/ui` module and see the change
 cd apps/desktop
 pnpm dev
 ```
+
+## Todos
+
+- [x] ~~Can we get auto-imports working in VSCode?~~ Yes, don't install dependencies in anywhere but the root package.json, and only one node_modules directory will be created
+- [x] ~~Can the project automatically add path aliases for each pakcage/app, and can we use them internal to their own packages, the same as `~` today?~~ Yes - See the [custom monorepoPaths Vite plugin](https://github.com/aaronklinker-st/example-integrated-monorepo/blob/79530a254aa5eb4801b3e48718dea62fd5bdf8f8/vite.shared.cts#L6-L27), and the [`scripts/prepare-tsconfig-paths.ts`](https://github.com/aaronklinker-st/example-integrated-monorepo/blob/main/scripts/prepare-tsconfig-paths.ts) for updating the `tsconfig.json`
+- [x] ~~Is HMR working for both the electron app and web extension when saving a change to the UI package?~~ Yes!
+- [x] ~~How do we enforce module boundries, like only importing `webextension-polyfill` inside `apps/extension`?~~ There's an ESLint plugin that can do this
+- [x] ~~How do we check for type errors or run linting? Separately per package or once for the entire repo?~~ Once for the entire repo will be the simplest solution
+- [ ] Can we use multiple TSConfig files, like one per package? Or do we even need to?
+- [ ] Can we use multiple versions of a tool like Vite?
