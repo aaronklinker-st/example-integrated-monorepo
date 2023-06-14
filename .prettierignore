@@ -1,0 +1,5 @@
+dist
+dist-ssr
+dist-electron
+release
+pnpm-lock.yaml

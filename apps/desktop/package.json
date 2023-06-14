@@ -1,0 +1,17 @@
+{
+  "name": "desktop",
+  "description": "TODO: Fill out description",
+  "author": {
+    "name": "Sensor Tower"
+  },
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "lint": "echo 'TODO'",
+    "lint:check": "echo 'TODO'",
+    "dev": "vite",
+    "build": "vite build && cd ../.. && electron-builder --projectDir apps/desktop -c.electronVersion=$(tsx scripts/electron-version.ts)",
+    "preview": "vite preview"
+  },
+  "main": "dist-electron/main.js"
+}
